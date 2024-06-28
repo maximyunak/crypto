@@ -4,10 +4,478 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Fesydex</title>
+    <link type="image/x-icon" href="./logo.ico" rel="shortcut icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="./public/logo.svg" alt="" />
+          <h1 class="logo__text">Fesydex</h1>
+        </div>
+        <div class="header__navigation">
+          <div class="nav-bg">
+            <nav class="header__nav">
+              <a href="" class="mobile">Trading</a>
+              <a href="" class="">P2P</a>
+              <a href="" class="hide">Trading</a>
+              <a href="" class="hide new"
+                >Invest <img src="./temple/images/header/new.svg.svg" alt=""
+              /></a>
+              <a href="" class="mobile hot"
+                >Staking <img src="./temple/images/header/hot.svg" alt=""
+              /></a>
+              <a href="" class="">Wallet</a>
+              <a href="" class="hide">Support</a>
+              <a href="" class="mobile">Login</a>
+              <a href="" class="mobile">Sign Up</a>
+            </nav>
+          </div>
+          <div class="header__buttons">
+            <a href="" class="header__login opacity">Login</a>
+            <a href="" class="header__signup opacity">Sign up</a>
+          </div>
+          <div class="menu">
+            <span class="menu__line"></span><span class="menu__line"></span
+            ><span class="menu__line"></span>
+          </div>
+        </div>
+      </div>
+      <div class="header__line"></div>
+    </header>
+    <div class="menu-overlay"></div>
+
+    <section class="banner">
+      <div class="banner__container">
+        <div class="banner__text">
+          <h5 class="banner__title">Create new world</h5>
+          <h1 class="banner__main-text">
+            Buy, <span class="green">sell</span> & <span class="green"> trade </span> <br />
+            on the most famous crypto exchange
+          </h1>
+          <p class="banner__desc">
+            FesyDex has pioneered the concept of seamless trading of different cryptocurrency assets
+          </p>
+          <div class="banner__buttons">
+            <a href="" class="banner__trading opacity">Start Trading</a>
+            <a href="" class="banner__invest">Start Invest</a>
+          </div>
+        </div>
+        <div class="banner__img">
+          <img src="./temple/images/banner/coins.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="price__container">
+        <a href="" class="price__card">
+          <h3 class="price__coin">
+            <img src="./temple/images/price/btc.svg" alt="" />
+            Bitcoin
+          </h3>
+          <h1 class="price__price">$62142.24</h1>
+          <h5 class="price__change green">-2474.4$ (-3.9%)</h5>
+          <h4 class="price__date">Apr 18, 2024, 02:10 PM</h4>
+          <img src="./temple/images/price/green-bg.svg" alt="" class="price-bg" />
+        </a>
+        <a href="" class="price__card">
+          <h3 class="price__coin"><img src="./temple/images/price/eth.svg" alt="" /> Bitcoin</h3>
+          <h1 class="price__price">$62142.24</h1>
+          <h5 class="price__change green">-2474.4$ (-3.9%)</h5>
+          <h4 class="price__date">Apr 18, 2024, 02:10 PM</h4>
+          <img src="./temple/images/price/green-bg.svg" alt="" class="price-bg" />
+        </a>
+        <a href="" class="price__card">
+          <h3 class="price__coin"><img src="./temple/images/price/ltc.svg" alt="" /> Bitcoin</h3>
+          <h1 class="price__price">$62142.24</h1>
+          <h5 class="price__change red">-2474.4$ (-3.9%)</h5>
+          <h4 class="price__date">Apr 18, 2024, 02:10 PM</h4>
+          <img src="./temple/images/price/red-bg.svg" alt="" class="price-bg" />
+        </a>
+        <a href="" class="price__card">
+          <h3 class="price__coin">
+            <img src="./temple/images/price/trx.svg" alt="" />
+            Bitcoin
+          </h3>
+          <h1 class="price__price">$62142.24</h1>
+          <h5 class="price__change red">-2474.4$ (-3.9%)</h5>
+          <h4 class="price__date">Apr 18, 2024, 02:10 PM</h4>
+          <img src="./temple/images/price/red-bg.svg" alt="" class="price-bg" />
+        </a>
+        <a href="" class="price__card">
+          <h3 class="price__coin"><img src="./temple/images/price/bnb.svg" alt="" /> Bitcoin</h3>
+          <h1 class="price__price">$62142.24</h1>
+          <h5 class="price__change green">-2474.4$ (-3.9%)</h5>
+          <h4 class="price__date">Apr 18, 2024, 02:10 PM</h4>
+          <img src="./temple/images/price/green-bg.svg" alt="" class="price-bg" />
+        </a>
+      </div>
+    </section>
+
+    <section class="change">
+      <div class="change__container">
+        <h1 class="change__title">Wide Range of Assets</h1>
+        <h5 class="change__desc">
+          We rank top among first tier exchanges with highest number of listed crypto
+        </h5>
+        <div class="center">
+          <div class="change__statistics">
+            <div class="change__stats">
+              <div class="change__coin">
+                <img src="./temple/images/change/btc-2.svg" alt="" />
+                <h2>Bitcoin</h2>
+                <h1>BTC</h1>
+              </div>
+              <h5 class="change__price">$62631.4700</h5>
+              <h5 class="change__percent red">-0.591%</h5>
+              <img src="./temple/images/change/red.svg" alt="" class="change__grafic" />
+              <a href="" class="change__trade opacity6">Trade</a>
+            </div>
+
+            <div class="change__stats">
+              <div class="change__coin">
+                <img src="./temple/images/change/eth-2.svg" alt="" />
+                <h2>Ethereum</h2>
+                <h1>ETH</h1>
+              </div>
+              <h5 class="change__price">$62631.4700</h5>
+              <h5 class="change__percent red">-0.591%</h5>
+              <img src="./temple/images/change/red.svg" alt="" class="change__grafic" />
+              <a href="" class="change__trade opacity6">Trade</a>
+            </div>
+
+            <div class="change__stats">
+              <div class="change__coin">
+                <img src="./temple/images/change/btcc-2.svg" alt="" />
+                <h2>Bitcoin Cash</h2>
+                <h1>BCH</h1>
+              </div>
+              <h5 class="change__price">$62631.4700</h5>
+              <h5 class="change__percent red">-0.591%</h5>
+              <img src="./temple/images/change/green.svg" alt="" class="change__grafic" />
+              <a href="" class="change__trade opacity6">Trade</a>
+            </div>
+
+            <div class="change__stats">
+              <div class="change__coin">
+                <img src="./temple/images/change/rpl-2.svg" alt="" />
+                <h2>Ripple</h2>
+                <h1>XRP</h1>
+              </div>
+              <h5 class="change__price">$62631.4700</h5>
+              <h5 class="change__percent red">-0.591%</h5>
+              <img src="./temple/images/change/green.svg" alt="" class="change__grafic" />
+              <a href="" class="change__trade opacity6">Trade</a>
+            </div>
+
+            <div class="change__stats">
+              <div class="change__coin">
+                <img src="./temple/images/change/cnk-2.svg" alt="" />
+                <h2>Chainlink</h2>
+                <h1>LINK</h1>
+              </div>
+              <h5 class="change__price">$62631.4700</h5>
+              <h5 class="change__percent red">-0.591%</h5>
+              <img src="./temple/images/change/green.svg" alt="" class="change__grafic" />
+              <a href="" class="change__trade opacity6">Trade</a>
+            </div>
+
+            <div class="change__stats">
+              <div class="change__coin">
+                <img src="./temple/images/change/ttr-2.svg" alt="" />
+                <h2>Tether</h2>
+                <h1>USDT</h1>
+              </div>
+              <h5 class="change__price">$62631.4700</h5>
+              <h5 class="change__percent red">-0.591%</h5>
+              <img src="./temple/images/change/red.svg" alt="" class="change__grafic" />
+              <a href="" class="change__trade opacity6">Trade</a>
+            </div>
+
+            <div class="change__stats">
+              <div class="change__coin">
+                <img src="./temple/images/change/dgc-2.svg" alt="" />
+                <h2>Dogecoin</h2>
+                <h1>DOGE</h1>
+              </div>
+              <h5 class="change__price">$62631.4700</h5>
+              <h5 class="change__percent red">-0.591%</h5>
+              <img src="./temple/images/change/red.svg" alt="" class="change__grafic" />
+              <a href="" class="change__trade opacity6">Trade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="monitoring">
+      <div class="monitoring__container">
+        <div class="monitoring__card">
+          <img src="./temple/images/monitoring/user.svg" alt="" />
+          <div class="monitoring__card-info">
+            <h1>123K</h1>
+            <h5>Active Traders</h5>
+          </div>
+        </div>
+        <div class="monitoring__card">
+          <img src="./temple/images/monitoring/trade.svg" alt="" />
+          <div class="monitoring__card-info">
+            <h1>$12,421,232</h1>
+            <h5>Trading Volume (24h)</h5>
+          </div>
+        </div>
+        <div class="monitoring__card">
+          <img src="./temple/images/monitoring/money.svg" alt="" />
+          <div class="monitoring__card-info">
+            <h1>536</h1>
+            <h5>Avg Liquidly</h5>
+          </div>
+        </div>
+        <div class="monitoring__card">
+          <img src="./temple/images/monitoring/coins.svg" alt="" />
+          <div class="monitoring__card-info">
+            <h1>300+</h1>
+            <h5>Avaliable Coins</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__container">
+        <h1 class="advantages__title advantages-mobile">Delivering Financial Freedom</h1>
+        <img class="advantages__phone" src="./temple/images/advantages/telefon.svg" alt="" />
+        <div class="advantages__info">
+          <h1 class="advantages__title advantages-pk">Delivering Financial Freedom</h1>
+          <h4 class="advantages__title-desc">
+            Embark on a Journey into the Future of Finance. Welcome to an advanced cryptocurrency
+            trading platform, where innovation meets opportunity.
+          </h4>
+
+          <div class="advantages__cards">
+            <div class="advantages__card">
+              <img src="./temple/images/advantages/download.svg" alt="" />
+              <div class="advantages__card-info">
+                <h1 class="advantages__card-title">24/7 Customer Support</h1>
+                <h5 class="advantages__card-desc">
+                  Our dedicated customer support team is available around the clock to assist you
+                  with any queries.
+                </h5>
+              </div>
+            </div>
+            <div class="advantages__card">
+              <img src="./temple/images/advantages/debet.svg" alt="" />
+              <div class="advantages__card-info">
+                <h1 class="advantages__card-title">Crypto Debet Cards</h1>
+                <h5 class="advantages__card-desc card-2">
+                  For professional traders with 50,000$ / month turnover we offer crypto debit
+                  cards. Instant withdrwals and deposits in BTC.
+                </h5>
+              </div>
+            </div>
+            <div class="advantages__card">
+              <img src="./temple/images/advantages/zero.svg" alt="" />
+              <div class="advantages__card-info">
+                <h1 class="advantages__card-title">Zero fees for Market Makers</h1>
+                <h5 class="advantages__card-desc card-3">
+                  From January 1 to September 30, trade on FESYDEX with zero fees.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="feedback__container">
+        <h1 class="feedback__title">
+          User gives <span class="underline">feedback</span> using our crypto app
+        </h1>
+        <div class="feedback__reviews">
+          <a href="" class="feedback__review">
+            <div class="feedback__user">
+              <img src="./public/assets/feedback/Alex.jpg.svg" alt="" />
+              <div>
+                <h1 class="user__name">Alex Zansir</h1>
+                <h2 class="user__link">@alexzan</h2>
+              </div>
+            </div>
+            <div class="feedback__review-title">Trading Nirvana!</div>
+            <div class="feedback__review-desc">
+              This platform is my zen garden for trading. Smooth interface, lightning-fast
+              transactions, and security on point. Trading has never been this blissful. 10/10, my
+              go-to happy place. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+              sunt est pariatur, qui accusamus deleniti blanditiis harum fuga architecto fugit rerum
+              sint, beatae aspernatur illo. Expedita molestiae commodi eum omnis inventore
+              voluptates sed repellat vitae exercitationem ad? Iste, consectetur mollitia ullam fuga
+              enim at quas quidem in maxime, fugit beatae!
+            </div>
+          </a>
+          <a href="" class="feedback__review">
+            <div class="feedback__user">
+              <img src="./public/assets/feedback/Alex.jpg.svg" alt="" />
+              <div>
+                <h1 class="user__name">Alex Zansir</h1>
+                <h2 class="user__link">@alexzan</h2>
+              </div>
+            </div>
+            <div class="feedback__review-title">Trading Nirvana!</div>
+            <div class="feedback__review-desc">
+              This platform is my zen garden for trading. Smooth interface, lightning-fast
+              transactions, and security on point. Trading has never been this blissful. 10/10, my
+              go-to happy place.
+            </div>
+          </a>
+          <a href="" class="feedback__review review-3">
+            <div class="feedback__user">
+              <img src="./public/assets/feedback/Alex.jpg.svg" alt="" />
+              <div>
+                <h1 class="user__name">Alex Zansir</h1>
+                <h2 class="user__link">@alexzan</h2>
+              </div>
+            </div>
+            <div class="feedback__review-title">Trading Nirvana!</div>
+            <div class="feedback__review-desc">
+              This platform is my zen garden for trading. Smooth interface, lightning-fast
+              transactions, and security on point. Trading has never been this blissful. 10/10, my
+              go-to happy place.
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="platform">
+      <div class="platform__container">
+        <div class="platform__info">
+          <h1 class="platform__title">Trusted platform anytime & anywhere</h1>
+          <h5 class="platform__desc">
+            Join FesyDex Today and Redefine Your Cryptocurrency Trading Journey. Take the plunge
+            into a world where innovation meets reliability, and your trading experience is our top
+            priority.
+          </h5>
+          <a href="" class="opacity platform__singup platform-pk">Sign up now</a>
+        </div>
+        <img src="./temple/images/platform/mobilepng.png" alt="" />
+        <a href="" class="opacity platform__singup platform-mobile">Sign up now</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__main">
+          <div class="footer__social">
+            <h1 class="logo-text">
+              <img src="./public/logo.svg" alt="" class="footer__logo" /> FESYDEX
+            </h1>
+            <h5 class="footer__main-text">
+              Innovative cryptocurrency exchange with advanced financial services. We rely on
+              blockchain technology to provide everything you need for wise trading and investment.
+            </h5>
+            <div class="footer__mail">
+              <h4>Listing Request: <a href="" class="green opacity"> listing@fesydex.com </a></h4>
+              <h4>Partnership: <a href="" class="green opacity">partnership@fesydex.com</a></h4>
+            </div>
+            <div class="footer__social-media">
+              <a href=""><img class="opacity" src="./temple/images/footer/twitter.svg" alt="" /></a>
+              <a href=""><img class="opacity" src="./temple/images/footer/inst.svg" alt="" /></a>
+              <a href=""><img class="opacity" src="./temple/images/footer/facebok.svg" alt="" /></a>
+            </div>
+
+            <h5 class="footer__subscribe">Subscribe to our newsletter</h5>
+
+            <div class="footer__input">
+              <input type="text" placeholder="Enter email" />
+              <button type="submit" class="opacity">Subscribe</button>
+            </div>
+          </div>
+          <div class="footer__links">
+            <div class="footer__link">
+              <h1 class="link__title">Products</h1>
+              <a href="" class="link__link">Spot trading</a
+              ><a href="" class="link__link">Futures trading</a
+              ><a href="" class="link__link">Options trading</a
+              ><a href="" class="link__link">Wallet</a><a href="" class="link__link">Instant swap</a
+              ><a href="" class="link__link">P2P trading</a
+              ><a href="" class="link__link">DeFi Staking</a
+              ><a href="" class="link__link">WAURED Visa Card</a>
+            </div>
+            <div class="footer__link">
+              <h1 class="link__title">Products</h1>
+              <a href="" class="link__link">Spot trading</a
+              ><a href="" class="link__link">Futures trading</a
+              ><a href="" class="link__link">Options trading</a
+              ><a href="" class="link__link">Wallet</a><a href="" class="link__link">Instant swap</a
+              ><a href="" class="link__link">P2P trading</a
+              ><a href="" class="link__link">DeFi Staking</a
+              ><a href="" class="link__link">WAURED Visa Card</a>
+            </div>
+            <div class="footer__link">
+              <h1 class="link__title">Products</h1>
+              <a href="" class="link__link">Spot trading</a
+              ><a href="" class="link__link">Futures trading</a
+              ><a href="" class="link__link">Options trading</a
+              ><a href="" class="link__link">Wallet</a><a href="" class="link__link">Instant swap</a
+              ><a href="" class="link__link">P2P trading</a
+              ><a href="" class="link__link">DeFi Staking</a
+              ><a href="" class="link__link">WAURED Visa Card</a>
+            </div>
+            <div class="footer__link">
+              <h1 class="link__title">Products</h1>
+              <a href="" class="link__link">Spot trading</a
+              ><a href="" class="link__link">Futures trading</a
+              ><a href="" class="link__link">Options trading</a
+              ><a href="" class="link__link">Wallet</a><a href="" class="link__link">Instant swap</a
+              ><a href="" class="link__link">P2P trading</a
+              ><a href="" class="link__link">DeFi Staking</a
+              ><a href="" class="link__link">WAURED Visa Card</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__copy">
+          <h2 class="copy__text">
+            In acceding to or using the Platform and the Site, you represent and warrant that you
+            are fully aware of the risks associated with the transactions involving Digital Assets
+            or the use of Platform. You agree and understand that you are solely responsible for
+            determining the nature, potential value, suitability, and appropriateness of these risks
+            for yourself, and that the Company does not give advice or recommendations regarding any
+            Digital Asset, including the suitability and appropriateness of, and investment
+            strategies for, any Digital Asset. You agree and understand that you access and use the
+            Platform and the Site at your own risk.
+          </h2>
+          <h1 class="copy__reserved">
+            <span class="green">FESYDEX</span> 2024 © All right reserved
+          </h1>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>

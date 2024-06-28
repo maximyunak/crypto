@@ -1,0 +1,121 @@
+@import './variables';
+
+.feedback {
+  margin-top: 85px;
+  font-family: 'Gilroy-Regular', sans-serif;
+  @media (max-width: 750px) {
+    display: none;
+  }
+  &__container {
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+  }
+
+  &__title {
+    font-size: 56px;
+    font-weight: 700;
+    max-width: 560px;
+    margin: 0 auto;
+    @media (max-width: 1300px) {
+      font-size: 50px;
+    }
+  }
+
+  &__reviews {
+    display: flex;
+    margin-top: 44px;
+    justify-content: space-between;
+    @media (max-width: 1235px) {
+      justify-content: center;
+      gap: 100px;
+    }
+    @media (max-width: 920px) {
+      gap: 50px;
+      margin-top: 30px;
+    }
+    @media (max-width: 850px) {
+      gap: 20px;
+    }
+  }
+
+  .review-3 {
+    @media (max-width: 1235px) {
+      display: none;
+    }
+  }
+
+  &__review {
+    font-family: 'Roboto';
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    width: 382px;
+    height: 452px;
+    padding: 31px 33px;
+
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__user {
+    display: flex;
+    gap: 15px;
+
+    .user {
+      &__name {
+        font-size: 21px;
+        font-weight: 500;
+        color: rgba(19, 17, 26, 1);
+      }
+
+      &__link {
+        font-size: 16px;
+        font-weight: 400;
+        color: #989898;
+        margin-top: 4px;
+      }
+    }
+  }
+
+  &__review-title {
+    margin-top: 35px;
+    font-size: 23px;
+    color: #13111a;
+    font-weight: 500;
+  }
+
+  &__review-desc {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #0e0d16;
+    line-height: 30px;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // max-height: 220px;
+
+    display: -webkit-box; /* Активируем flexbox режим */
+    -webkit-line-clamp: 7; /* Ограничиваем количество строк */
+    -webkit-box-orient: vertical; /*  Выравниваем строки вертикально */
+
+    overflow: hidden; /* Скрываем контент, выходящий за пределы */
+    text-overflow: ellipsis;
+  }
+  .underline {
+    position: relative; /*  Для позиционирования псевдоэлемента */
+    display: inline-block;
+  }
+
+  .underline::before {
+    content: '';
+    position: absolute;
+    bottom: 4px; /*  Регулируй высоту линии */
+    left: 0;
+    width: 100%;
+    height: 21px;
+    background-color: $green;
+    z-index: -1; /* Помещаем линию под текст */
+  }
+}

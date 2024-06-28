@@ -1,0 +1,65 @@
+@import './variables';
+
+@import url(./_null.scss);
+@import url(./_header.scss);
+@import url(./_banner.scss);
+@import url(./_price.scss);
+@import url(./_change.scss);
+@import url(./_monitoring.scss);
+@import url(./_advantages.scss);
+@import url(./_platform.scss);
+@import url(./_feedback.scss);
+@import url(./_footer.scss);
+
+[class*='__container'] {
+  max-width: 1420px;
+  margin: 0 auto;
+  @media (max-width: 1450px) {
+    padding: 0 15px;
+  }
+}
+
+body {
+  font-family: 'Gilroy';
+  overflow-x: hidden;
+
+  &.active {
+    overflow: hidden;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: $green;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #d3d3d3;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.opacity {
+  cursor: pointer;
+  transition: 0.3s !important;
+
+  &:hover {
+    opacity: 0.8 !important;
+  }
+}
+.opacity6 {
+  cursor: pointer;
+  transition: 0.3s !important;
+
+  &:hover {
+    opacity: 0.6 !important;
+  }
+}

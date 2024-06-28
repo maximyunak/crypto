@@ -1,0 +1,65 @@
+@import './variables';
+
+.monitoring {
+  margin-top: 104px;
+
+  @media (max-width: 800px) {
+    margin-top: 45px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 158px;
+    row-gap: 50px;
+    // justify-content: space-between;
+    align-items: center;
+    @media (max-width: 721px) {
+      // flex-direction: column;
+      gap: 50px;
+    }
+    @media (max-width: 626px) {
+      // justify-content: start;
+      align-items: start;
+      flex-direction: column;
+      // gap: 20px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    gap: 30px;
+
+    img {
+      @media (max-width: 450px) {
+        width: 40px;
+      }
+    }
+  }
+
+  &__card-info {
+    h1 {
+      font-size: 43px;
+      margin-top: 5px;
+      font-family: 'Gilroy-Medium', sans-serif;
+      // font-family: 'Gilroy-Bold', sans-serif;
+      font-weight: 600;
+
+      @media (max-width: 450px) {
+        font-size: 28px;
+      }
+    }
+
+    h5 {
+      font-size: 18px;
+      // margin-top: 10px;
+      font-family: 'Gilroy-Bold', sans-serif;
+      color: rgba(0, 0, 0, 0.38);
+
+      @media (max-width: 450px) {
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,213 @@
+.header {
+  margin-top: 35px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    z-index: 12;
+
+    h1 {
+      font-family: 'Archivo';
+      font-weight: 700;
+      font-size: 24px;
+    }
+    cursor: pointer;
+
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__navigation {
+    /* width: 60vw; */
+    display: flex;
+    gap: 174px;
+    align-items: center;
+
+    @media (max-width: 1400px) {
+      gap: 20px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 60px;
+    z-index: 99;
+    /* display: none; */
+
+    font-family: 'Inter';
+
+    a {
+      color: #818181;
+
+      transition: 0.3s;
+
+      &:hover {
+        color: #202020;
+      }
+    }
+    .hide {
+      @media (max-width: 730px) {
+        display: none;
+      }
+    }
+    .mobile {
+      display: none;
+      @media (max-width: 730px) {
+        display: block;
+      }
+    }
+
+    .new {
+      position: relative;
+
+      img {
+        position: absolute;
+        top: -16px;
+
+        @media (max-width: 950px) {
+          display: none;
+        }
+      }
+    }
+
+    .hot {
+      gap: 8px;
+      display: none;
+      @media (max-width: 730px) {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 1160px) {
+      gap: 40px;
+    }
+    @media (max-width: 950px) {
+      gap: 20px;
+    }
+    @media (max-width: 730px) {
+      flex-direction: column;
+      position: absolute;
+      /* display: none; */
+      left: 50px;
+      top: 100px;
+      /* background-color: red; */
+
+      a {
+        color: #000;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .nav-bg {
+    @media (max-width: 730px) {
+      width: 273px;
+      height: 100vh;
+      background-color: #fff;
+      position: absolute;
+      left: -300px;
+      bottom: 0;
+      z-index: 11;
+      transition: 0.3s;
+      /* display: none; */
+
+      &.active {
+        left: 0;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 16px;
+
+    @media (max-width: 850px) {
+      gap: 10px;
+    }
+    @media (max-width: 730px) {
+      display: none;
+    }
+  }
+
+  &__login {
+    padding: 10px 41.5px;
+    border: 2px solid #1eae68;
+    border-radius: 10px;
+    height: 44px;
+    color: #1eae68;
+    @media (max-width: 850px) {
+      padding: 10px 20px;
+    }
+  }
+
+  &__signup {
+    border-radius: 10px;
+    height: 44px;
+    padding: 12px 41.5px;
+    color: #fff;
+    background-color: #1eae68;
+    @media (max-width: 850px) {
+      padding: 12px 20px;
+    }
+  }
+  &__line {
+    margin-top: 15px;
+    width: 100vw;
+    height: 1px;
+    background-color: #ededed;
+
+    display: none;
+
+    @media (max-width: 730px) {
+      display: block;
+    }
+  }
+
+  .menu {
+    display: none;
+
+    &__line {
+      height: 2px;
+      width: 24px;
+      background-color: #1eae68;
+    }
+
+    @media (max-width: 730px) {
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+    }
+  }
+}
+
+.menu-overlay {
+  position: fixed; /* Фиксируем позицию */
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); Черный цвет с прозрачностью 50% */
+  background-color: #575757c7;
+  display: none;
+  z-index: 10;
+  transition: 0.3s; /* Плавный переход при показе/скрытии */
+}
+
+.menu-overlay.active {
+  display: block; /* Показывать, когда меню активно */
+  opacity: 1;
+}

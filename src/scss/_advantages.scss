@@ -1,0 +1,131 @@
+.advantages {
+  margin-top: 144px;
+  font-family: 'Roboto';
+  @media (max-width: 800px) {
+    margin-top: 50px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1150px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__phone {
+    @media (max-width: 1350px) {
+      width: 500px;
+    }
+    @media (max-width: 1150px) {
+      margin-left: -50px;
+    }
+    @media (max-width: 550px) {
+      width: 273px;
+    }
+  }
+
+  &__info {
+  }
+
+  &-mobile {
+    display: none;
+    text-align: center;
+    @media (max-width: 1150px) {
+      display: block;
+      margin-bottom: 50px;
+      @media (max-width: 800px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-pk {
+    max-width: 517px;
+
+    @media (max-width: 1150px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 56px;
+    font-weight: 700;
+    color: #110f18;
+    line-height: 66px;
+    @media (max-width: 450px) {
+      font-size: 36px;
+      line-height: 45px;
+    }
+  }
+
+  &__title-desc {
+    max-width: 572px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #5f6167;
+    margin-top: 15px;
+    line-height: 33px;
+    @media (max-width: 1150px) {
+      display: none;
+    }
+  }
+
+  &__cards {
+    margin-top: 50px;
+    @media (max-width: 1350px) {
+      margin-top: 30px;
+    }
+  }
+
+  &__card {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    @media (max-width: 550px) {
+      gap: 12px;
+    }
+    @media (max-width: 450px) {
+      img {
+        width: 36px;
+      }
+    }
+  }
+
+  &__card-info {
+  }
+
+  &__card-title {
+    font-size: 27px;
+    font-weight: 500;
+    color: #13111a;
+    @media (max-width: 450px) {
+      font-size: 18px;
+    }
+  }
+
+  &__card-desc {
+    font-size: 21px;
+    font-weight: 400;
+    color: #5f6167;
+    margin-top: 17px;
+    max-width: 464px;
+    line-height: 33px;
+    @media (max-width: 550px) {
+      margin-top: 10px;
+    }
+    @media (max-width: 450px) {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+  }
+
+  .card-3 {
+    max-width: 311px;
+  }
+  .card-2 {
+    max-width: 420px;
+  }
+}

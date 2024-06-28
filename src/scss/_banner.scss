@@ -1,0 +1,162 @@
+@import './_variables.scss';
+
+.banner {
+  margin-top: 42px;
+  @media (max-width: 1100px) {
+    margin-top: 30px;
+  }
+  @media (max-width: 430px) {
+    margin-top: 25px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 730px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+    }
+  }
+
+  &__text {
+    @media (max-width: 730px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'ABC Ginto Normal Unlicensed Trial';
+    color: $green;
+    @media (max-width: 430px) {
+      font-size: 14px;
+    }
+  }
+
+  &__main-text {
+    max-width: 759px;
+    font-family: 'ABC Ginto Normal Unlicensed Trial';
+    font-weight: 500;
+    font-size: 82px;
+    margin-top: 30px;
+    margin-bottom: 33px;
+    line-height: 82px;
+    @media (max-width: 1380px) {
+      font-size: clamp(3.125rem, -4.704rem + 10.53vw, 4.375rem);
+      line-height: clamp(3.125rem, -4.704rem + 10.53vw, 4.375rem);
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    @media (max-width: 900px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    @media (max-width: 730px) {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    @media (max-width: 430px) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__desc {
+    font-family: 'ABC Ginto Normal Unlicensed Trial';
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.59);
+    max-width: 434px;
+    @media (max-width: 430px) {
+      font-weight: 400;
+      font-size: 14px;
+      max-width: 315px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 69px;
+    margin-top: 40px;
+    font-family: 'ABC Ginto Normal Unlicensed Trial';
+    font-size: 20px;
+    font-weight: 500;
+
+    a {
+      width: 286px;
+      border-radius: 10px;
+      padding: 23px;
+      text-align: center;
+    }
+
+    @media (max-width: 1300px) {
+      gap: 30px;
+      margin-top: 30px;
+      a {
+        width: 230px;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      gap: 20px;
+      margin-top: 20px;
+      a {
+        width: 180px;
+      }
+    }
+    @media (max-width: 730px) {
+      width: 100%;
+      a {
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
+    @media (max-width: 430px) {
+      margin-top: 25px;
+      a {
+        padding: 14px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__trading {
+    background-color: $green;
+    color: #fff;
+  }
+
+  &__invest {
+    border: 1.24px solid #06100b;
+    color: #06100b;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__img {
+    img {
+      width: 569px;
+      @media (max-width: 730px) {
+        width: 350px;
+      }
+      @media (max-width: 430px) {
+        width: 291px;
+      }
+    }
+  }
+}
+.green {
+  color: $green;
+}
